@@ -27,11 +27,10 @@ define your endpoints.
 ## Getting started
 
 1. Install Docker (if you don't already have it)
-2. From the root of this repo, run `docker-compose build` to compile the images and install requirements.
-3. In one terminal window, run `docker-compose up db`. When the database is ready, you should see a log similar to
-"database system is ready to accept connections"
-4. Once the database is up, in another window, run `docker-compose up api`
-5. You now have a server running on your machine. You can test it by navigating to `http://localhost:3000/health` in
+2. From the root of this repo, run `npm i` to install dependencies
+3. From the root of this repo, run `docker-compose build` to compile the images.
+4. From the root of this repo, run `docker-compose up`.
+5. You now have a database and server running on your machine. You can test it by navigating to `http://localhost:3000/health` in
 your browser. You should see a "Hello World" message.
 
 
