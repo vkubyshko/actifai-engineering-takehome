@@ -20,6 +20,10 @@ month.
 Your job is to build the API that will deliver data to this dashboard. In addition to the stated requirements above, we
 would like to see you think about what additional data/metrics would be useful to add.
 
+At a minimum, write one endpoint that returns time series data for user sales i.e. a list of rows, where each row
+corresponds to a time window and information about sales. When you design the endpoint, think  about what query
+parameters and options you want to support, to allow flexibility for the front-end team.
+
 ## Codebase
 
 This repository contains a bare-bones Node/Express server, which is defined in `server.js`. This file is where you will
