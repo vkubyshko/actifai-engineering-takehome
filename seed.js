@@ -2,18 +2,13 @@
 
 const { Client } = require('pg');
 const fs = require("fs");
+const db = require('./db');
 const groupsSqlInsert = fs.readFileSync("seedGroups.sql").toString();
 const userGroupsSqlInsert = fs.readFileSync("seedUserGroups.sql").toString();
 const usersSqlInsert = fs.readFileSync("seedUsers.sql").toString();
 const salesSqlInsert = fs.readFileSync("seedSales.sql").toString();
 
-const pgclient = new Client({
-  host: 'db',
-  port: '5432',
-  user: 'user',
-  password: 'pass',
-  database: 'actifai'
-});
+const pgclient = new Client(db.config);
 
 pgclient.connect();
 
